@@ -1,0 +1,405 @@
+:root
+{
+	--primary-color: rgba(163, 159, 159, 0.678);
+	--second-color: black;
+	--three-color: rgb(102, 2, 1);
+	--four-color: white;
+	--five-color: gray;
+	--six--color: rgba(0,0,0,0.8);
+	--seven-color: red;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html
+{
+	font-size: 62.5%;
+}
+	/* Logo y Menu de navegación*/
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 101%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+	background: var(--six--color);
+}
+header .logo
+{
+	position: relative;
+	color: var(--primary-color);
+	display: inline-block;
+	font-size: 2.5rem;
+	text-decoration: none;
+}
+header .logo:hover
+{
+	color: var(--four-color);
+}
+header a
+{
+	user-select: none;
+}
+header ul
+{
+	position: relative;
+	display: flex;
+}
+header ul li
+{
+	list-style: none;
+}
+header ul li a
+{
+	display: inline-block;
+	color: var(--primary-color);
+	font-weight: 600;
+	font-size: 1.6rem;
+	margin-left: 10px;
+	padding: 8px 10px;
+	text-decoration: none;
+	user-select: none;
+}
+header ul li a.active,
+header ul li a:hover
+{
+	color: var(--four-color);
+	border-radius: 30px;
+}
+	/* cuerpo de la página */
+body::-webkit-scrollbar 
+{
+	width: 1rem;
+	background: var(--second-color);
+}
+body::-webkit-scrollbar-thumb
+{
+	background: var(--three-color);
+	border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:hover
+{
+	background: var(--seven-color);
+}
+
+body 
+{
+	background-color: var(--second-color);
+	color: var(--primary-color);
+	font-weight: bold;
+}
+body p
+{
+	user-select: none;
+	text-align: center;
+	word-spacing: 10px;
+}
+h2
+{
+	text-align: center;
+	font-size: 6.5rem;
+	font-weight: bold;
+	color: var(--three-color);
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 15px;
+	user-select: none;
+	margin: 100px;
+	transition: all ease 2s;
+}
+h2:hover
+{
+	transition: 2s;
+	color: var(--seven-color);
+	text-shadow: 0 0 1px var(--seven-color), 0 0 3px var(--seven-color), 0 0 3px var(--seven-color), 0 0 30px var(--seven-color);
+}
+.contexto
+{
+	height: 570px;
+	width: auto;
+	background-size: cover; 
+	background-position: center;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img1/backsod.jpg);
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.contexto h1
+{
+	top: 0;
+	padding: 170px;
+	text-align: center;
+	font-size: 9.9rem;
+	user-select: none;
+	color: var(--five-color);
+	transition: all ease 2s;
+}
+.contexto h1:hover
+{
+	color: var(--four-color);
+	text-shadow: 0 0 5px var(--four-color), 0 0 5px var(--four-color), 0 0 5px var(--four-color), 0 0 15px var(--four-color);
+}
+	/* seccion contenedor uno */
+.bigcontenedor
+{
+	max-width: 100%;
+	margin: 5px 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contenedor
+{
+	max-width: 100%;
+	display: inline-block;
+	align-items: center;
+	height: 65vh;
+	user-select: none;
+	justify-items: center;
+}
+.contenedor figure
+{
+	left: 25px;
+	display: inline-flex;
+	margin: 30px 45px;
+	position: relative;
+	min-height: 250px;
+	width: 340px;
+	overflow: hidden;
+	border-radius: 250px;
+	transition: all 2s;
+}
+.contenedor figure:hover
+{
+	box-shadow: 0px 0px 15px 0px var(--seven-color);
+}
+.contenedor figure img
+{
+	width: 100%;
+	height: 100%;
+	transition: all ease 2s;
+}
+.contenedor figure .capa
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--six--color); 
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+}
+.contenedor figure:hover > .capa
+{
+	opacity: 1;
+	visibility: visible;
+}
+.contenedor figure:hover > .capa h3
+{
+	margin-top: 60px; 
+	margin-bottom: 50px;
+}
+.contenedor figure:hover > img
+{
+	transform: scale(1.6);
+}
+.contenedor figure > img
+{
+	transition: all ease 2s;
+}
+.contenedor figure .capa h3
+{
+	color: var(--four-color);
+	font-weight: 800px;
+	margin-bottom: 120px;
+	transition: all 500ms ease-out;
+	font-size: 3.0rem;
+}
+.contenedor figure .capa p
+{
+	color: var(--four-color);
+	font-size: 3.0rem;
+	line-height: 1.5;
+	width: 100%;
+	max-width: 270px;
+	margin: auto; 
+}
+.contenedor figure a
+{
+	margin: 10px;
+	user-select: none;
+	text-decoration:none;
+	color: var(--five-color);
+	border-radius: 50px;
+	letter-spacing: 1px;
+	font-size: 3.0rem;
+	padding: 10px 5px;
+}
+.contenedor figure a:hover
+{
+	text-decoration: underline;
+/*	border: 1px solid ;
+	border-radius: 50px;*/
+	color: var(--seven-color);
+}
+	/* seccion contenedor 2 */
+
+
+.contenedordos
+{
+	max-width: 100%;
+	display: inline-block;
+	align-items: center;
+	height: 65vh;
+	user-select: none;
+	justify-items: center;
+}
+.contenedordos figure
+{
+	left: 25px;
+	display: inline-flex;
+	margin: 30px 45px;
+	position: relative;
+	min-height: 250px;
+	width: 340px;
+	overflow: hidden;
+	border-radius: 250px;
+	transition: all 2s;
+}
+.contenedordos figure:hover
+{
+	box-shadow: 0px 0px 15px 0px var(--seven-color);
+}
+.contenedordos figure img
+{
+	width: 100%;
+	height: 100%;
+	transition: all ease 2s;
+}
+.contenedordos figure .capa
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--six--color); 
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+}
+.contenedordos figure:hover > .capa
+{
+	opacity: 1;
+	visibility: visible;
+}
+.contenedordos figure:hover > .capa h3
+{
+	margin-top: 60px; 
+	margin-bottom: 50px;
+}
+.contenedordos figure:hover > img
+{
+	transform: scale(1.6);
+}
+.contenedordos figure .capa h3
+{
+	color: var(--four-color);
+	font-weight: 800px;
+	margin-bottom: 200px;
+	transition: all 500ms ease-out;
+	font-size: 3.0rem;
+}
+.contenedordos figure .capa p
+{
+	color: var(--four-color);
+	font-size: 3.0rem;
+	line-height: 1.5;
+	width: 100%;
+	max-width: 270px;
+	margin: auto; 
+}
+.contenedordos figure a
+{
+	margin: 10px;
+	user-select: none;
+	text-decoration:none;
+	color: var(--five-color);
+	border-radius: 50px;
+	letter-spacing: 1px;
+	font-size: 3.0rem;
+	padding: 10px 5px;
+}
+.contenedordos figure a:hover
+{
+	text-decoration: underline;
+/*	border: 1px solid ;
+	border-radius: 50px;*/
+	color: var(--seven-color);
+}
+	/* seccion reponsive  contenedores*/
+
+/* @media (min-height: 700px) 
+{
+	.contexto{ 
+		font-size: 500rem;
+	}
+} */
+
+
+	/* seccion pie de la página */
+footer 
+{
+	margin-top: 50px;
+	user-select: none;
+     position: relative;
+     width: 100%;
+     min-height: 85vh;
+	padding: 100px;
+     display: flex;
+	justify-content: flex-start;
+     align-items: center;
+     background-size: cover;
+	background-image: url(img1/back.jfif);
+     background-position: center;
+     background-attachment: fixed;
+	overflow: hidden;
+}
+footer p
+{
+	font-weight: 700;
+	font-size: 3.9rem;
+	text-align: center;
+	margin: 20px 20px ;
+	color: var(--seven-color);
+}
+footer p a
+{
+	text-decoration: none;
+	color: var(--five-color);
+}
+footer p a:hover
+{
+	text-decoration: underline;
+	color: var(--seven-color);
+}
+.derechos
+{
+	text-align: center;
+	background: var(--second-color);
+	color: var(--five-color);
+	user-select: none;
+}
+.derechos p
+{
+	font-size: 2.9rem;
+	font-weight: bold;
+}

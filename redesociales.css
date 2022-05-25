@@ -1,0 +1,186 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+html
+{
+  font-size: 62.5%;
+}
+body
+{
+  background: black;
+  font-weight: bold;
+}
+body::-webkit-scrollbar 
+{
+    display: none;
+}
+/*Comienzo de menu*/
+header
+{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 85%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  z-index:1000;
+  background:black;
+}
+header .logo
+{
+  position :relative;
+  color: gray;
+  display: inline-block;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+header .logo:hover
+{
+  color: white;
+}
+header a
+{
+  user-select: none;
+}
+header ul
+{
+  position: relative;
+  display: flex;
+}
+header ul li
+{
+  list-style: none;
+}
+header ul li a
+{
+  display: inline-block;
+  color: gray;
+  font-weight: 600;
+  font-size: 1.7em;
+  margin-left: 10px;
+  padding:8px 10px;
+  text-decoration: none;
+  user-select: none;
+}
+header ul li a.active,
+header ul li a:hover
+{
+  color: white;
+  border-radius: 30px;
+}
+/*Incio del efecto 3d Redes Sociales*/
+
+.facebook1
+{
+  margin: 50px;
+}
+
+.twitter1
+{
+  margin: 50px;
+}
+.patreon1
+{
+  margin: 50px;
+}
+.socialMedia
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 96.4vh;
+  transition: 0.5s;
+}
+.sci
+{
+  position: relative;
+  display: flex;
+}
+.sci li
+{
+  list-style: none;
+}
+.sci li::before
+{
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,calc(-50% + 120px));
+  font-size: 14vh;
+  pointer-events: none;
+  font-weight: 700;
+  transition: 0.5s;
+  opacity: 0;
+}
+.sci li:hover::before
+{
+  opacity: 0.2;
+  transform: translate(-50%,calc(-50% + 150px));
+}
+.sci li a
+{
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 5em;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+  transition: background 0.25s;
+}
+.js-tilt-glare
+{
+  border-radius: 10px;
+}
+.sci li a:hover.facebook
+{
+  background: #1877f2;
+  box-shadow: 0px 0px 5px 5px white;
+}
+.sci li a:hover.twitter
+{
+  background: #0099ff;
+  box-shadow: 0px 0px 5px 5px white;
+}
+.sci li a:hover.patreon
+{
+  background: #FF5C50;
+  box-shadow: 0px 0px 5px 5px white;
+}
+.sci li a .fa
+{
+  transition: 0.25s;
+  pointer-events: none;
+}
+.sci li a:hover .fa
+{
+  color: #fff;
+  transform: scale(2.75) translateZ(50px);
+}
+/*Termina Efecto 3d*/
+
+/*Derechos Aqui le pertenece*/
+.derechos
+{
+  text-align: center;
+  background: black;
+  color: gray;
+  user-select: none;
+}
+.derechos p
+{
+  font-size: 2.1rem;
+}

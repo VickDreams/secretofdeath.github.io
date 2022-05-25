@@ -1,0 +1,251 @@
+:root
+{
+	--primary-color: rgb(98, 97, 93);
+	--second-color: black;
+	--three-color: white;
+	--four-color: gray;
+}
+html
+{
+	font-size: 62.5%;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: url('../img/epica/requiemfortheindifferent1.jpg');
+	width: auto;
+	background-size: cover;
+	background-position: 50% -8%;
+}
+body p
+{
+	text-align: justify;
+	user-select: none;
+}
+img
+{
+	filter: blur(10px);
+}
+
+img:hover
+{
+	filter: blur(0px);
+}
+
+h2
+{
+	text-align: left;
+	user-select: none;
+}
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 101%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+	background: var(--second-color);
+}
+header .logo
+{
+	position: relative;
+	color: var(--primary-color);
+	display: inline-block;
+	font-size: 2.7rem;
+	text-decoration: none;
+	font-weight: 800;
+}
+header a
+{
+	user-select: none;
+}
+header ul
+{
+	position: relative;
+	display: flex;
+}
+header ul li
+{
+	list-style: none;
+}
+header ul li a
+{
+	display: inline-block;
+	color: var(--primary-color);
+	font-weight: 600;
+	font-size: 1.6rem;
+	margin-left: 10px;
+	display: inline-block;
+	padding: 8px 10px;
+	text-decoration: none;
+	user-select: none;
+}
+header ul li a.active,
+header ul li a:hover
+{
+	background: var(--primary-color);
+	color:var(--second-color);
+	border-radius: 30px;
+}
+.content
+{
+	position: relative;
+}
+.content .textBox
+{
+	position: relative;
+	max-width: 550px;
+}
+.content .textBox h2
+{
+	user-select: none;
+	color: var(--three-color);
+	font-size: 3.5em;
+	margin-bottom: 10px;
+	line-height: 1.2em;
+	font-weight: 700;
+}
+.content .textBox p
+{
+	font-size: 35px;
+	color: var(--three-color);
+	font-weight: bold;
+}
+.content .textBox a:hover
+{
+	background: var(--second-color);
+	color: var(--primary-color);
+}
+.content .textBox a
+{
+	user-select: none;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 15px 30px;
+	background: var(--primary-color);
+	color: var(--second-color);
+	font-size: 2.0em;
+	border-radius: 40px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+.sci
+{
+     position: absolute;
+     bottom: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.sci li
+{
+     list-style: none;
+}
+.sci li a
+{
+     position: relative;
+     display: inline-block;
+     margin-right: 15px;
+     width: 50px;
+     height: 50px;
+     background: var(--primary-color);
+     color:var(--second-color);
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 0.2s ease-in-out;
+     text-decoration:none;
+     box-shadow:0px 10px 7px 0px var(--second-color);
+     font-size:30px;
+}
+/*.sci li a img
+{
+	user-select: none;
+	width: 50px;
+	height: 50px;
+     filter: invert(1);
+     transform: scale(0.5);
+}*/
+.sci li a:hover
+{
+     background: var(--second-color);
+     box-shadow:0px 0px 0px 0px;
+     transform: translateY(-10px);
+}
+.sci li a:hover .fa
+{
+  color:var(--primary-color);
+}
+section 
+{
+     position: relative;
+     width: 100%;
+     min-height: 96vh;
+     padding: 150px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+
+
+.win
+{
+	position: absolute;
+	right: 20%;
+	max-width: 350px;
+	max-height: 350px;
+	margin: -10px;
+	padding: 0px;
+	border-radius: 50px;
+	box-shadow: 5px 0px 40px 5px var(--primary-color);
+}
+
+footer 
+{
+	width: auto;
+	height: auto;
+	font-weight: bold;
+	background: var(--second-color);
+	color: var(--four-color);
+}
+footer p
+{
+	text-align: center;
+	font-size: 2.1rem;
+}
+/* colores estilo sombreado y color de fondo de la imagenes */
+
+/* .pie .pagina img:hover {
+	border-radius: 100px;
+	background: linear-gradient(315deg,rgb(0, 204, 255),blue);
+	box-shadow: 0px 0px 80px 10px;
+	color: rgb(0, 162, 255);
+	transition: all 100ms ease;
+}
+
+.pie2 .pagina2 img:hover {
+	border-radius: 18px;
+	background: linear-gradient(315deg,red,rgb(255, 255, 255));
+	box-shadow: 0px 0px 80px 10px;
+	color: rgb(255, 1, 1);
+	transition: all 100ms ease;
+}
+
+.pie3 .pagina3 img:hover {
+	border-radius: 15px;
+	background: linear-gradient(315deg,pink,rgb(248, 7, 168));
+	box-shadow: 0px 0px 80px 10px;
+	color: rgb(255, 7, 152);
+	transition: all 100ms ease;
+} */
