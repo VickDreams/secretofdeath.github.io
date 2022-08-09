@@ -7,37 +7,68 @@
      <link rel="icon" href="img/detodo/iconsod.jpg" type="image/png">
      <link rel="stylesheet" href="vision.css">
      <title>Secrets Of Death</title>
-
-     <header>
-		<!-- menu -->
-		<a href="index.html" class="logo">SOD</a>
-		<ul class="navigator">
-			<li> <a href="index.html">Casa</a></li>
-			<li> <a href="bands.html">Bandas</a></li>
-      		<!-- <li><a href="redesociales.html">Redes</a></li> -->
-			<li> <a class="active" href="vision.html">Vision</a></li>
-		</ul>
-	</header>
-
 </head>
 <body>
-     <main class="fondo">
-               <div class="texto"><h2>Nuestra Vision</h2></div>
-               <div class="textouno"><p>Es compartir la música, de quien la necesite. ya que muchas personas no tiene la posibilidad o quizas no tienen el tiempo y entonces es donde nosotros actuamos para brindar este servicio.</p></div>
-     </main>
-     <main class="text">
-          <div class="titulo"><h2>Nuestra Meta</h2></div>
-          <div class="parrafo"><p>Ser reconocidos por los oyendes del Heavy Metal y Subgeneros, por lo cuál si eres nuevo por aquí. Nos Encantaria que fueras parte de nosotros, y nos compartas con más gente.</p></div>
-     </main>
-     <main class="gracias">
-          <div class="despedida"><h1>¡Gracias por pasarte por nuestra página, espero vuelvas pronto!</h1></div>
-     </main>
-     <main class="apoyo">
-          <div class="apoyouno"><a href="https://bit.ly/3mTu9CY" target="-bank">cualquier apoyo es bien recibido, para continuar con este increible proyecto.</a></div>
-     </main>
 
-<div class="derechos">
-     <p>todos los derecho reservados 2021 SODHDR&M</p>
+     <!-- Menu de Navegacion -->
+<header>
+	<a href="index.html" class="logo">SOD</a>
+	<ul class="navigator">
+		<li> <a href="index.html">Casa</a></li>
+		<li> <a href="bands.html">Bandas</a></li>
+		<li> <a class="active" href="vision.html">Vision</a></li>
+	</ul>
+</header>
+
+<div class="contexto">
+	<h1>Objetivo</h1>
 </div>
+
+<div class="contenedor">
+	<div class="divmeta">
+		<div class="nmeta">
+			<h2>Nuestra Vision</h2>
+			<p>Es compartir la música, de quien la necesite. ya que muchas personas no tiene la posibilidad o quizas no tienen el tiempo y entonces es donde nosotros actuamos para brindar este servicio.</p>
+		</div>
+	</div>
+	
+	<div class="divnvision">
+		<div class="nvision">
+			<h2>Nuestra Vision</h2>
+			<p>Ser reconocidos por los oyendes del Heavy Metal y Subgeneros, por lo cuál si eres nuevo por aquí. Nos Encantaria que fueras parte de nosotros, y nos compartas con más gente.</p>
+		</div>
+	</div>
+</div>
+
+
+	<!-- Pie de la pagina -->
+<footer>
+	<p>¡Gracias por pasarte por nuestra página, espero vuelvas pronto!
+		Cualquier apoyo es bien recibido, para continuar con este proyecto.</p>
+
+		<!-- Boton Paypal -->
+	<div class="btn-paypal">
+		<div id="donate-button-container">
+			<div id="donate-button"></div>
+			<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+			<script>
+			PayPal.Donation.Button({
+			env:'production',
+			hosted_button_id:'BM3MDF87SKVBG',
+			image: {
+			src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+			alt:'Donate with PayPal button',
+			title:'PayPal - The safer, easier way to pay online!',
+			}
+			}).render('#donate-button');
+			</script>
+		</div>
+	</div>
+
+		<!-- Derechos -->
+	<section class="derechos">
+		<p>todos los derecho reservados 2021 SODHDR&M®</p>
+	</section>
+</footer>
 </body>
 </html>
