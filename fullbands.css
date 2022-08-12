@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -86,14 +88,14 @@ body {
 
 .content .boxmin h2 {
 	color: #fff;
-	font-size: 5em;
+	font-size: 3em;
 	text-align: center;
 	margin: 20px 0;
 }
 
 .content .boxmin p
 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: #fff;
 	margin: 20px;
 }
@@ -104,7 +106,7 @@ body {
 	margin: 20px;
 	border: 1px solid #fff;
 	color: #fff;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	border-radius: 10px;
 	text-decoration: none;
 }

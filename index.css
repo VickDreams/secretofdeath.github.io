@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -52,6 +54,14 @@ a.active, a:hover {
 	border-bottom: 1px solid #aaa;
 }
 
+	/* botton estilos */
+header .modo {
+	width: 50px;
+	font-size: 2em;
+	margin-left: auto;
+	cursor: pointer;
+}
+
 	/* cuerpo de la página */
 body::-webkit-scrollbar {
 	width: .4em;
@@ -71,6 +81,8 @@ body {
 	color: #000;
 }
 
+
+	/* Titulos */
 .contexto {
 	width: auto;
 	overflow: hidden;
