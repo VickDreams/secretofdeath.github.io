@@ -79,6 +79,7 @@ body {
 	background: #00000080;
 	opacity: 0;
 	border-radius: 10px;
+	box-shadow: 5px 5px 20px 2px #000;
 	transition: all .5s;
 }
 
