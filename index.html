@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta charset="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="keywords" content="sod, SOD, secretofdeath, SecretOfDeath, hogar del rock&metal, Hogar Del Rock&Metal, descargar musica">
 	<link rel="icon" href="img/detodo/iconsod.jpg" type="image/png">
 	<link rel="stylesheet" type="text/css" href="index.css">
@@ -11,15 +12,15 @@
 </head>
 
 <body>
-	<!-- Menu de Navegacion -->
-<header>
-	<a href="index.html" class="logo"> SOD </a>
-	<ul>
-		<li> <a class="active" href="index.html">Casa</a></li>
-		<li> <a href="bands.html">Bandas</a></li>
-		<li> <a href="vision.html">Vision</a></li>
-	</ul>
-</header>
+
+	<!-- menu de navegacion -->
+<navigation-menu
+	home="index.html"
+	bands="bands.html"
+	vision="vision.html"
+></navigation-menu>
+
+
 
 	<!-- Titulos -->
 	<div class="contexto">
@@ -193,19 +194,10 @@
 	</div>
 </section>
 
+<footer-section
+	footer=""
+></footer-section>
 
-	<!-- Pie de la pagina -->
-<footer>
-	<p>Esta es una página en la cual compartimos música para ustedes a partir de las peticioses.
-		cualquier pedido o sugerencia es bien recibida, puedes contactarnos desdes nuestro correo:
-		<a href="https://bit.ly/secretofdeathmx" target="-bank">secretofdeath00@gmail.com</a></p>
-
-		<!-- Derechos -->
-	<section class="derechos">
-		<p>todos los derecho reservados 2021 SODHDR&M®</p>
-	</section>
-</footer>
-
-<script src="main.js"></script>
+<script src="./js/app.js" type="module"></script>
 </body>
 </html>

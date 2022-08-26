@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
 
+
 * {
 	margin: 0;
-	padding: 0;
+	/* padding: 0; */
 	box-sizing: border-box;
 	font-family: 'Zen Maru Gothic', sans-serif;
 	font-size: 18px;
@@ -14,49 +15,6 @@ html {
 	height: 100%;
 }
 
-	/* Logo y Menu de navegación*/
-header {
-	position: fixed;
-	width: 100%;
-	display: flex;
-	padding: 30px;
-	background: #fff;
-}
-
-header .logo{
-	position: relative;
-	color: #000;
-	font-size: 2em;
-}
-
-header .logo:hover {
-	color: #aaa;
-	border-bottom: none;
-}
-
-ul {
-	display: flex;
-}
-
-li {
-	list-style: none;
-	margin: auto;
-	margin-left: 30px;
-}
-
-li > a {
-	display: flex;
-	color: #000;
-	font-size: 1.2em;
-	margin-left: 10px;
-	padding: 10px;
-}
-
-a.active, a:hover {
-	color: #aaa;
-	border-bottom: 1px solid #aaa;
-}
-
 	/*Cuerpo de la página*/
 body {
 	min-height: 100%;
@@ -65,67 +23,31 @@ body {
 	background-size: cover;
 }
 
-.content {
-	display: flex;
-}
-
-.content .boxbig {
-	margin-top: 130px;
-	margin-left: 50px;
-}
-
-.content .boxmin {
-	padding: 30px;
-	background: #00000080;
-	opacity: 0;
-	border-radius: 10px;
-	box-shadow: 5px 5px 20px 2px #000;
-	transition: all .5s;
-}
-
-.content .boxmin:hover {
-	opacity: 1;
-}
-
-.content .boxmin h2 {
-	color: #fff;
-	font-size: 3em;
-	text-align: center;
-	margin: 20px 0;
-}
-
-.content .boxmin p
-{
-	font-size: 1.2em;
-	color: #fff;
-	margin: 20px;
-}
-
-.content .boxmin a
-{
-	padding: 10px 20px;
-	margin: 20px;
-	border: 1px solid #fff;
-	color: #fff;
-	font-size: 1.2em;
-	border-radius: 10px;
-	text-decoration: none;
-}
-
-.content .boxmin a:hover
-{
-	background: #fff;
-	color: #000;
-}
-
-	/* seccion pie de la página */
+/* seccion pie de la página */
 footer {
-     display: block;
-	background: #fff;
+	background: #ffffffa1;
+	display: block;
+	align-content: center;
 	margin-top: auto;
 }
 
+footer p {
+	padding: 0 30px;
+	font-size: 2em;
+	text-align: justify;
+}
+
+footer a {
+	font-size: 1em;
+	color: #777;
+}
+
+footer a:hover {
+	color: #000;
+}
+
 .derechos p {
+	margin-top: 0 50px;
 	text-align: center;
 	font-size: 1.5em;
 }

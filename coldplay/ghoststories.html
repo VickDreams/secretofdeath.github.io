@@ -15,35 +15,30 @@
 </head>
 <body background="../img/coldplay/2014ghoststories.jpg">
 
-  <section>
-    <header>
-      <a href="../index.html" class="logo">SOD</a>
-      <ul class="navigation">
-        <li><a  href="../index.html">Casa</a></li>
-        <li><a class="active" href="../bands.html">Bandas</a></li>
-        <li><a href="../vision.html">Vision</a></li>
-      </ul>
-    </header>
+  <navigation-menu
+  home="../index.html"
+  bands="../bands.html"
+  vision="../vision.html"
+>
+</navigation-menu>
 
-      <!-- Bonton de albums y concierto -->
-    <div class="content">
-      <div class="boxbig">
-        <div class="boxmin">
-          <h2>Ghost Stories</h2>
-            <p>Año: 2014</p>
-            <a href="https://download1509.mediafire.com/mo9gev8jcehg/eo1eacs32t38co2/Ghost+Stories.zip" target="_bank">Descargar</a>
-          </div>
-      </div>
-    </div>
+    <!-- Bonton de albums y concierto -->
 
-</section>
+<details-album
+  title="Ghost Stories"
+  description="Año: 2014"
+  download="https://download1509.mediafire.com/mo9gev8jcehg/eo1eacs32t38co2/Ghost+Stories.zip"
+></details-album>
 
 <!-- Pie de la pagina -->
 <footer>
-    <!-- Derechos -->
-  <section class="derechos">
-    <p>todos los derecho reservados 2021 SODHDR&M®</p>
-  </section>
+<!-- Derechos -->
+<section class="derechos">
+  <p>todos los derecho reservados 2021 SODHDR&M®</p>
+</section>
 </footer>
+
+
+<script src="../js/app.js" type="module"></script>
 </body>
 </html>

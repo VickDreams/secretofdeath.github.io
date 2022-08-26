@@ -7,7 +7,7 @@
 	<meta charset="description" content="">
 	<meta charset="keywords" content="sod, SOD, secretofdeath, SecretOfDeath, hogar del rock&metal, Hogar Del Rock&Metal">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="icon" href="../img/bullet/bulletlogo.png" type="image/png">
+	<link rel="icon" href="../img/bullet/logo.png" type="image/png">
 	<link rel="stylesheet" type="text/css" href="../bands.css">
 
 
@@ -15,19 +15,18 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<title>Álbums</title>
-
-	<header>
-		<a href="../index.html" class="logo">SOD</a>
-		<ul class="navigator">
-			<li> <a href="../index.html">Casa</a></li>
-			<li> <a class="active" href="../bands.html">Bandas</a></li>
-			<li> <a href="../vision.html">Vision</a></li>
-		</ul>
-	</header>
 </head>
 
 
 <body>
+
+	<!-- menu de navegacion -->
+<navigation-menu
+	home="../index.html"
+	bands="../bands.html"
+	vision="../vision.html"
+></navigation-menu>
+
 
 <div class="contexto">
 		<h1>Álbums</h1>
@@ -109,12 +108,10 @@
 
 </section>
 
-<!-- Pie de la pagina -->
-<footer>
-	<!-- Derechos -->
-<section class="derechos">
-	<p>todos los derecho reservados 2021 SODHDR&M®</p>
-</section>
-</footer>
+<footer-section
+	footer=""
+></footer-section>
+
+<script src="../js/app.js" type="module"></script>
 </body>
 </html>

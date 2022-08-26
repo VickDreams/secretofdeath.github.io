@@ -16,38 +16,32 @@
 
      <title>Arch Enemy</title>
 </head>
-<body>
+<body background="../img/arch/stigmata1.jpg">
 
-  <section>
-    <img src="../img/arch/stigmata1998.jpg" class="win">
-    <header>
-      <a href="../index.html" class="logo">SOD</a>
-      <ul class="navigation">
-        <li><a  href="../index.html">Casa</a></li>
-        <li><a class="active" href="../bands.html">Bandas</a></li>
-        <!-- <li><a href="../news.html">Noticias</a></li> -->
-        <li><a href="../vision.html">Vision</a></li>
-      </ul>
-    </header>
+<navigation-menu
+  home="../index.html"
+  bands="../bands.html"
+  vision="../vision.html"
+>
+</navigation-menu>
 
+    <!-- Bonton de albums y concierto -->
 
-    <div class="content">
-      <div class="textBox">
-      <h2>Stigmata</h2>
-      <p>Año: 1998</p>
-      <a href="#" target="_bank">Descargar</a>
-    </div>
-      </div>
+<details-album
+  title="Stigmata"
+  description="Año: 1998"
+  download=""
+></details-album>
 
-<ul class="sci">
-  <li><a href="https://www.facebook.com/SecretsOfDeathMx" target="-bank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-  <li><a href="https://twitter.com/SecretOfDeath1" target="-bank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-   </ul>
-</section>
-</body>
+<!-- Pie de la pagina -->
 <footer>
-    <p>
-      todos los derecho reservados 2021 SODHDR&M
-    </p>
-   </footer>
+<!-- Derechos -->
+<section class="derechos">
+  <p>todos los derecho reservados 2021 SODHDR&M®</p>
+</section>
+</footer>
+
+
+<script src="../js/app.js" type="module"></script>
+</body>
 </html>

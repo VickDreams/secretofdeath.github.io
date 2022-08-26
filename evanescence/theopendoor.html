@@ -11,45 +11,36 @@
 
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <title>Evanescence</title>
 </head>
 
 <body background="../img/evanescence/theopendoor2006.jpg">
 
-  <section>
-    <header>
-      <a href="../index.html" class="logo">SOD</a>
-      <ul class="navigation">
-        <li><a href="../index.html">Casa</a></li>
-        <li><a class="active" href="../bands.html">Bandas</a></li>
-        <li><a href="../vision.html">Vision</a></li>
-      </ul>
-    </header>
+<navigation-menu
+  home="../index.html"
+  bands="../bands.html"
+  vision="../vision.html"
+>
+</navigation-menu>
 
     <!-- Bonton de albums y concierto -->
-    <div class="content">
-      <div class="boxbig">
-        <div class="boxmin">
-          <h2>The Open Door</h2>
-          <p>Año: 2006</p>
-          <a href="https://download1510.mediafire.com/aa37562q3zng/n85dqv2adferfmq/The+Open+Door.zip"
-            target="_bank">Descargar</a>
-        </div>
-      </div>
-    </div>
 
-  </section>
+<details-album
+  title="The Open Door"
+  description="Año: 2006"
+  download="https://download1510.mediafire.com/aa37562q3zng/n85dqv2adferfmq/The+Open+Door.zip"
+></details-album>
 
-  <!-- Pie de la pagina -->
-  <footer>
-    <!-- Derechos -->
-    <section class="derechos">
-      <p>todos los derecho reservados 2021 SODHDR&M®</p>
-    </section>
-  </footer>
+<!-- Pie de la pagina -->
+<footer>
+<!-- Derechos -->
+<section class="derechos">
+  <p>todos los derecho reservados 2021 SODHDR&M®</p>
+</section>
+</footer>
+<script src="../js/app.js" type="module"></script>
 </body>
-
 </html>

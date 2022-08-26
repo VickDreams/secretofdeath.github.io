@@ -15,35 +15,30 @@
 </head>
 <body background="../img/arch/concierto.jpg">
 
-  <section>
-    <header>
-      <a href="../index.html" class="logo">SOD</a>
-      <ul class="navigation">
-        <li><a  href="../index.html">Casa</a></li>
-        <li><a class="active" href="../bands.html">Bandas</a></li>
-        <li><a href="../vision.html">Vision</a></li>
-      </ul>
-    </header>
+<navigation-menu
+  home="../index.html"
+  bands="../bands.html"
+  vision="../vision.html"
+>
+</navigation-menu>
 
-      <!-- Bonton de albums y concierto -->
-    <div class="content">
-      <div class="boxbig">
-        <div class="boxmin">
-          <h2>Live at Resurrection</h2>
-            <p>Año: 2019</p>
-            <a href="https://download938.mediafire.com/wjkkspwdaheg/13ow1wjloafqqlv/Arch+Enemy+-+Live+at+Resurrection+Fest+EG+2019+%28Viveiro%2C+Spain%29+%28Pro-shot%2C+Full+.rar" target="_bank">Descargar</a>
-          </div>
-      </div>
-    </div>
+    <!-- Bonton de albums y concierto -->
 
-</section>
+<details-album
+  title="Live at Resurrection"
+  description="Año: 2019"
+  download="https://download938.mediafire.com/wjkkspwdaheg/13ow1wjloafqqlv/Arch+Enemy+-+Live+at+Resurrection+Fest+EG+2019+%28Viveiro%2C+Spain%29+%28Pro-shot%2C+Full+.rar"
+></details-album>
 
 <!-- Pie de la pagina -->
 <footer>
-    <!-- Derechos -->
-  <section class="derechos">
-    <p>todos los derecho reservados 2021 SODHDR&M®</p>
-  </section>
+<!-- Derechos -->
+<section class="derechos">
+  <p>todos los derecho reservados 2021 SODHDR&M®</p>
+</section>
 </footer>
+
+
+<script src="../js/app.js" type="module"></script>
 </body>
 </html>
