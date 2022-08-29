@@ -19,10 +19,10 @@ class sFooter extends HTMLElement {
         const template = document.createElement("template");
         template.innerHTML = `
         <!-- Pie de la pagina -->
-        <footer>${this.footer}
+        <!--<footer>${this.footer}
             <p>Esta es una página en la cual compartimos música para ustedes a partir de las peticioses.
                 cualquier pedido o sugerencia es bien recibida, puedes contactarnos desdes nuestro correo:
-                <a href="https://bit.ly/secretofdeathmx" target="-bank">secretofdeath00@gmail.com</a></p>
+                <a href="https://bit.ly/secretofdeathmx" target="-bank">secretofdeath00@gmail.com</a></p> -->
         
                 <!-- Derechos --> 
             <section class="derechos">
